@@ -10,12 +10,12 @@ try:
         data[name] = marks
     for x, y in data.items():
         total =  sum(y)
-        print("{}'s total marks is {}".format(x, total))
+        print("{} 的总成绩是：{}".format(x, total))
         if total < 180:
-            print(x, "failed :(")
+            print(x, "的成绩不及格，很遗憾")
         else:
-            print(x, "passed :)")
+            print(x, "你的成绩很好，恭喜")
 except ValueError:
     print('输入错误，分数只能为数字')
 else:
-    print('没有异常')
+    print('程序计算完成')
